@@ -21,7 +21,7 @@ class HMM():
 		self.hidden = ["0", "1", "2", "3"]
 		self.B = {0:{}, 1:{}, 2:{}, 3:{} }
 		self.pi = [log(0.5), log(0.5), 0, 0] # 将概率转化为对数形式
-		self.train_data_path = r"F:\dataMining\segmentation\icwb2-data\training\msr_training.utf8"
+		self.train_data_path = r"msr_training.utf8"
 
 	def train_HMM(self):
 		chinese = re.compile(u"([\u4e00-\u9fffa-zA-Z]+)")
