@@ -136,7 +136,7 @@ class HMM():
 
 if __name__ == '__main__':
 	hmm = HMM()
-	# hmm.train_HMM()
+	hmm.train_HMM()
 	hmm.load_HMM()
 	test = u"迈向充满希望的新世纪"
 	print " ".join(hmm.check_new_word(test)).encode("utf8")
